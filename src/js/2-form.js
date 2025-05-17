@@ -29,7 +29,7 @@ function onSubmit(e) {
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
   form.reset();
-  //   localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(STORAGE_KEY);
 }
 
 function loadFormData() {
