@@ -30,6 +30,8 @@ function onSubmit(e) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
   form.reset();
   localStorage.removeItem(STORAGE_KEY);
+  formData.email = '';
+  formData.message = '';
 }
 
 function loadFormData() {
@@ -41,4 +43,3 @@ function loadFormData() {
   formData.email = parsedData.email;
   formData.message = parsedData.message;
 }
-console.log(localStorage.getItem('feedback-form-state'));
